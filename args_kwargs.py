@@ -100,7 +100,11 @@ if __name__ == '__main__':
         print('[INFO] Example 8')
         print('[INFO] Packing and unpacking variables using **kwargs')
         try:
-            print(f"Passing a dictionary without unpacking: {arg_printer_4({'guava': 20, 'orange': 10})}")
+            print("Passing a dictionary without unpacking: ")
+            arg_printer_4({"guava": 20, "orange": 10})
         except TypeError:
             print('\033[93;1m[WARNING] The function expects key word arguments, but we passed in a positional argumet, hence the TypeError being raised!\033[0m')
-        print(f"Passing an unpacked dictionary: {arg_printer_4(**{'guava': 20, 'orange': 10})}")
+        print("Passing an unpacked dictionary: ")
+        arg_printer_4(**{"guava": 20, "orange": 10})
+        print("Another way of passing arguments to the printer 4: ")
+        arg_printer_4(guava=20, orange=10)
