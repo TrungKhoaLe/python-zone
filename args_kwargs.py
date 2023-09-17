@@ -1,5 +1,16 @@
 import argparse
 
+"""
+- When an asterisk (*) stays before a vairable name in a Python function, Python
+understands that the number of arguments here varies. Python forms a TUPLE from
+those arguments with the name defined after the asterisk and makes the variable
+available inside the function. This asterisk is also called the 'unpacking
+operator'.
+
+- **kwargs allows us to pass any number of keyword arguments to a function,
+  which is equivalent to passing any Python dictionaries to the function. 
+"""
+
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-ex', '--example', type=str, help='Choose an example to\
