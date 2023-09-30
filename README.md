@@ -3,10 +3,12 @@
 This is a place where I document confusing concepts that I have met during my journey in the
 software industry with Python.
 
-## 1. POSITIONAL ONLY ARGUMENT "/"
+## 1. POSITIONAL ONLY ARGUMENT "/" AND KEYWORD ONLY ARGUMENT "*"
 
-It indicates that parameters before the "/" can only be passed positionally
+"/" indicates that parameters before the "/" can only be passed positionally
 and cannot be passed using keyword arguments.
+
+"*" signals us that arguments after it must be keyword arguments.
 
 e.g.
 
