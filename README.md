@@ -64,3 +64,27 @@ Common use cases for Base64 encoding include:
 - Encoding binary attachments in emails.
 - Storing binary data in JSON or XML data structures.
 - Encoding binary data for transfer over HTTP headers or URL parameters.
+
+
+## `yield` statement
+
+- Similar to the `return` keyword: one returns values and the other returns a
+  generator object to the one who calls the function.
+
+- One major dissimilarity is return terminates the executions of the function,
+  while yield pauses the execution of the function.
+
+_Advantages:_
+
+- Memory efficency is high since the execution happens only when the caller
+  iterates over the object.
+
+- Pausing and resuming from the same point can be done easily as the variable
+  states are kept track.
+
+_Disadvantages:_
+
+- The flow of code might be difficult to understand,
+
+- Might cause erros in the program if the calling of generator functions is not
+  handled properly.
