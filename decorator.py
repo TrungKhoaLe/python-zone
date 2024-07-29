@@ -1,5 +1,14 @@
 '''A Python decorator is a function that takes in a function and  returns it by
 adding some functionality
+
+A decorator is used to alter the behaviour of a function without modifying the
+function itself.
+
+Use cases of decorator:
+    - Add logging,
+    - test performance,
+    - perform caching,
+    - verfify permissions.
 '''
 
 
